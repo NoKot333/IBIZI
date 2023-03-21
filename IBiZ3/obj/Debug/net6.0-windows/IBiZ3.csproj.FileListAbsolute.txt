@@ -1,0 +1,17 @@
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\bin\Debug\net6.0-windows\IBiZ3.exe
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\bin\Debug\net6.0-windows\IBiZ3.deps.json
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\bin\Debug\net6.0-windows\IBiZ3.runtimeconfig.json
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\bin\Debug\net6.0-windows\IBiZ3.dll
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\bin\Debug\net6.0-windows\IBiZ3.pdb
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.csproj.AssemblyReference.cache
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.Form1.resources
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.csproj.GenerateResource.cache
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.AssemblyInfoInputs.cache
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.AssemblyInfo.cs
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.csproj.CoreCompileInputs.cache
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.dll
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\refint\IBiZ3.dll
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.pdb
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\IBiZ3.genruntimeconfig.cache
+C:\Users\nicol\source\repos\IBiZ3\IBiZ3\obj\Debug\net6.0-windows\ref\IBiZ3.dll
