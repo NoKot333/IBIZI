@@ -71,27 +71,19 @@ namespace IBiZ3
             {
                 text = textBox1.Text.ToUpper();
             }
-            string key = textBox5.Text.ToUpper();
-            int num_cols = 0;
-            if (Regex.IsMatch(key, @"^[А-ЯЁ ]+$") && (key.Distinct().Count() == key.Count()))
+            text = string.Join("", text.Split(" "));
+            string key = new string(textBox5.Text.ToUpper().Distinct().ToArray());
+            if (Regex.IsMatch(key, @"^[А-ЯЁ123]+$"))
             {
-                if (Regex.IsMatch(text, @"^[А-ЯЁ ]+$"))
+                if ((Regex.IsMatch(text, @"^[А-ЯЁ123]+$")) && (text.Length%2 == 0))
                 {
-                    if (Int32.TryParse(textBox10.Text, out num_cols))
-                    {
-                        char[,] square = Program.create_Square(key, num_cols % 33);
+                        char[,] square = Program.create_Square(key);
                         string final = Program.EncodeString(text, square);
                         textBox7.Text = final;
                         if (checkBox1.Checked)
                         {
                             using (StreamWriter sw = new StreamWriter(textBox9.Text)) { sw.Write(final); }
                         }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Введено не число в ячейку количества столбцов");
-                    }
-
                 }
                 else
                 {
@@ -118,26 +110,20 @@ namespace IBiZ3
                 {
                     text = textBox2.Text.ToUpper();
                 }
-                string key = textBox6.Text.ToUpper();
-                int num_cols = 0;
-                if (Regex.IsMatch(key, @"^[А-ЯЁ ]+$") && (key.Distinct().Count() == key.Count()))
+                text = string.Join("", text.Split(" "));
+                string key = new string(textBox6.Text.ToUpper().Distinct().ToArray());
+
+                if (Regex.IsMatch(key, @"^[А-ЯЁ123]+$"))
                 {
-                    if (Regex.IsMatch(text, @"^[А-ЯЁ ]+$"))
+                    if ((Regex.IsMatch(text, @"^[А-ЯЁ123]+$")) && (text.Length % 2 == 0))
                     {
-                        if (Int32.TryParse(textBox10.Text, out num_cols))
-                        {
-                            char[,] square = Program.create_Square(key, num_cols % 33);
+                            char[,] square = Program.create_Square(key);
                             string final = Program.DecodeString(text, square);
                             textBox8.Text = final;
                             if (checkBox1.Checked)
                             {
                                 using (StreamWriter sw = new StreamWriter(textBox9.Text)) { sw.Write(final); }
                             }
-                        }
-                        else
-                        {
-                            MessageBox.Show("Введено не число в ячейку количества столбцов");
-                        }
                     }
                     else
                     {
