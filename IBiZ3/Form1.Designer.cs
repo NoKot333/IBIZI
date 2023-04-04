@@ -297,7 +297,7 @@
             Controls.Add(textBox1);
             Controls.Add(button1);
             Name = "Form1";
-            Text = "Квадрат Полибия";
+            Text = "Гаммирование";
             ResumeLayout(false);
             PerformLayout();
         }

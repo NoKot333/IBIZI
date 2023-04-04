@@ -71,19 +71,18 @@ namespace IBiZ3
             {
                 text = textBox1.Text.ToUpper();
             }
-            text = string.Join("", text.Split(" "));
-            string key = new string(textBox5.Text.ToUpper().Distinct().ToArray());
-            if (Regex.IsMatch(key, @"^[À-ß¨123]+$"))
+            string key = textBox5.Text.ToUpper();
+            if (Regex.IsMatch(key, @"^[À-ß¨0-9 ]+$"))
             {
-                if ((Regex.IsMatch(text, @"^[À-ß¨123]+$")) && (text.Length%2 == 0))
+                if (Regex.IsMatch(text, @"^[À-ß¨0-9 ]+$"))
                 {
-                        char[,] square = Program.create_Square(key);
-                        string final = Program.EncodeString(text, square);
-                        textBox7.Text = final;
-                        if (checkBox1.Checked)
-                        {
-                            using (StreamWriter sw = new StreamWriter(textBox9.Text)) { sw.Write(final); }
-                        }
+
+
+                    textBox7.Text = Program.CipherString(text, key);
+                    if (checkBox1.Checked)
+                    {
+                        using (StreamWriter sw = new StreamWriter(textBox9.Text)) { sw.Write(textBox7.Text); }
+                    }
                 }
                 else
                 {
@@ -110,20 +109,17 @@ namespace IBiZ3
                 {
                     text = textBox2.Text.ToUpper();
                 }
-                text = string.Join("", text.Split(" "));
-                string key = new string(textBox6.Text.ToUpper().Distinct().ToArray());
+                string key = textBox6.Text.ToUpper();
 
-                if (Regex.IsMatch(key, @"^[À-ß¨123]+$"))
+                if (Regex.IsMatch(key, @"^[À-ß¨0-9 ]+$"))
                 {
-                    if ((Regex.IsMatch(text, @"^[À-ß¨123]+$")) && (text.Length % 2 == 0))
+                    if (Regex.IsMatch(text, @"^[À-ß¨0-9 ]+$"))
                     {
-                            char[,] square = Program.create_Square(key);
-                            string final = Program.DecodeString(text, square);
-                            textBox8.Text = final;
-                            if (checkBox1.Checked)
-                            {
-                                using (StreamWriter sw = new StreamWriter(textBox9.Text)) { sw.Write(final); }
-                            }
+                        textBox8.Text = Program.DecipherString(text, key);
+                        if (checkBox1.Checked)
+                        {
+                            using (StreamWriter sw = new StreamWriter(textBox9.Text)) { sw.Write(textBox8.Text); }
+                        }
                     }
                     else
                     {
